@@ -1,0 +1,136 @@
+:root {
+    --colordark: #101010;
+    --color1: #1b1b1b;
+    --color2: #2b2b2b;
+    --color3: #2f2f2f;
+    --text-color: #ffffff;
+    --linkscolor: orange;
+    --linkscolort: white;
+}
+
+body {
+    background-color: var(--color1);
+    color: white;
+}
+
+.topbar {
+    padding: 10px 10px;
+    font-size: 150%;
+}
+
+button {
+    border: none;
+    background-color: var(--linkscolor);
+    color: var(--linkscolort);
+    border-radius: 5px;
+}
+
+.topbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.therickroll {
+    aspect-ratio: 4/3;
+}
+
+.active {
+    background-color: var(--linkscolor) !important; 
+    color: var(--linkscolort) !important;
+}
+
+.postlist {
+    animation: fadein 2s;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.postcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postpage {
+
+    background-color: var(--color2);
+
+    width: 90%;
+
+    font-size: 120%;
+
+    padding: 1.5% 1.5%;
+}
+
+.postborder {
+    /*
+    justify-content: center;
+    align-items: center;
+    text-align: center;*/
+
+    border: 2px solid var(--color1);
+    padding: 1% 1%;
+}
+
+input {
+    display:inline-block;
+    width: 30%;
+
+    color: var(--text-color);
+    background-color: var(--color1);
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    color: var(--text-color);
+    background-color: var(--color1);
+    border: none;
+    border-radius: 5px;
+}
+
+pre {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 90%;
+}
+
+.post {
+    display: block;
+    border-radius: 5px;
+    width: 60%;
+    height: fit-content;
+    padding: 1.5% 1.5%;
+    block-size: fit-content;
+    border: 2px solid var(--color2);
+    border-radius: 28px;
+    margin-bottom: 1%;
+    font-size: 90%;
+    /*box-shadow: 0px 5px 5px var(--colordark);*/
+}
+
+.post a {
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 150%;
+}
+
+.post:hover {
+    opacity: 0.8;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1;}
+}
+
+a {
+    color: var(--linkscolor);
+}
+
+a:hover {
+    color: var(--linkscolor);
+}
