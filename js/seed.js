@@ -16,6 +16,8 @@ function Gen(seed,len_) {
     return Result;
 };
 
+// Runs when the button is pressed
+
 function A() {
     document.getElementById("result").value = Gen(document.getElementById("seed").value,document.getElementById("length").value);
 }
