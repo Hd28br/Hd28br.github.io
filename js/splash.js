@@ -1,5 +1,6 @@
 var texts = [
     "Bing chillin",
+    "Bingus",
     "F"
 ];
 
